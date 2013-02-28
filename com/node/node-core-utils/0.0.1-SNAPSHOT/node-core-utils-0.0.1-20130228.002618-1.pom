@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<artifactId>node</artifactId>
+		<groupId>com.node</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../node/pom.xml</relativePath>
+	</parent>
+
+	<artifactId>node-core-utils</artifactId>
+	<name>node utilities</name>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>javax.enterprise</groupId>
+			<artifactId>cdi-api</artifactId>
+		</dependency>
+	
+		<dependency>
+  			<groupId>org.jboss.solder</groupId>
+  			<artifactId>solder-impl</artifactId>
+  		</dependency>
+	
+		<dependency> 
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+		</dependency>
+
+
+		<dependency>
+			<groupId>commons-collections</groupId>
+			<artifactId>commons-collections</artifactId>
+			<version>${apache-commons-collections.version}</version>
+		</dependency>
+		
+		
+		
+	</dependencies>
+
+</project>
